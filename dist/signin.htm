@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="flex justify-center items-center mt-28">
+    <main class="bg-yellow-400 rounded-md shadow-md p-4 w-80 ">
+        <div >
+            <h1 class="text-3xl font-bold">SignIn Here</h1>
+            <input type="text" id="username" placeholder="your num.. or email" class="mt-10 text-2xl rounded-md">
+        </div>
+        <input type="password" id="password" placeholder="password" class="mt-6 text-2xl rounded-md">
+        <div>
+            <button onclick="signin()" class="mt-8 text-2xl rounded-md shadow-md p-2 bg bg-red-300 hover:bg-red-500">Sign Here</button>
+
+        </div>
+    </main>
+
+</body>
+
+<script>
+        function signin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+
+            const correctUsername = "arunchamling999@gmail.com";
+            const correctPassword = "password";
+
+            if (username === correctUsername && password === correctPassword) {
+                alert("Login successful! Welcome, " + username + ".");
+            } else {
+                alert("Login failed! Incorrect username or password.");
+            }
+        }
+</script>
+
+</html>
